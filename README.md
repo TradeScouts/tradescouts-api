@@ -15,38 +15,57 @@ git clone https://github.com/your-org/tradescouts-api.git
 cd tradescouts-api
 
 uv sync
+```
 
-This creates a local virtual environment (.venv) and installs Django.
+This creates a local virtual environment (`.venv`) and installs Django.
 
-Development
+## Development
 
 Apply migrations and start the dev server:
+
+```bash
 uv run python manage.py migrate
 uv run python manage.py runserver
+```
 
-The app will be available at http://127.0.0.1:8000
+The app will be available at [http://127.0.0.1:8000](http://127.0.0.1:8000).
 
 Create a superuser to access the admin:
 
+```bash
 uv run python manage.py createsuperuser
+```
 
-Then log in at http://127.0.0.1:8000/admin
+Then log in at [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin).
 
-Environment Variables
+## Environment Variables
 
-Configuration values can be stored in a .env file at the project root:
+Configuration values can be stored in a `.env` file at the project root:
+
+```env
 DJANGO_SECRET_KEY=replace-this
 DJANGO_ALLOWED_HOSTS=localhost,127.0.0.1
+```
 
-Common Commands
+## Common Commands
 
-Add a new package:
-uv add <package-name>
+- Add a new package:
+  ```bash
+  uv add <package-name>
+  ```
 
-Upgrade Django:
-uv lock --upgrade-package django
-uv sync
+- Upgrade Django:
+  ```bash
+  uv lock --upgrade-package django
+  uv sync
+  ```
 
-Run tests:
-uv run python manage.py test
+- Run tests:
+  ```bash
+  uv run python manage.py test
+  ```
 
+---
+
+## License
+MIT
