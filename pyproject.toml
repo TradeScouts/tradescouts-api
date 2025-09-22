@@ -1,9 +1,9 @@
 [project]
 name = "tradescouts-api"
 version = "0.1.0"
-requires-python = ">=3.9"
+requires-python = ">=3.12"
 dependencies = [
-  "django>=4.2.24",
+  "Django>=5,<6.0",
 ]
 
 [build-system]

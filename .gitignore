@@ -1,0 +1,27 @@
+# Python / Django
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.pytest_cache/
+.mypy_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# Local DB / media (dev only)
+db.sqlite3
+media/
+staticfiles/
+
+# Env & secrets
+.env
+.env.*
+!.env.example
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
