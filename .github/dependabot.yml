@@ -1,0 +1,11 @@
+version: 2
+updates:
+  # Python deps managed by uv
+  - package-ecosystem: "pip"
+    directory: "/" # root where pyproject.toml + uv.lock live
+    schedule:
+      interval: "weekly"
+    allow:
+      - dependency-type: "all"
+    commit-message:
+      prefix: "deps(api)"
